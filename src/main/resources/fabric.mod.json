@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "mendingbob",
+	"version": "${version}",
+	"name": "Mending Bob",
+	"description": "Brings back the item bob for mending repairs",
+	"authors": [
+		"amvern"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mendingbob/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"amvern.mendingbob.MendingBob"
+		],
+		"client": [
+			"amvern.mendingbob.MendingBobClient"
+		]
+	},
+	"mixins": [
+		"mendingbob.mixins.json",
+		{
+			"config": "mendingbob.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "amvern.mendingbob.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ItemInHandRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
