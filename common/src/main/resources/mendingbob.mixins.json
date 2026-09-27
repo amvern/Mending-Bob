@@ -6,7 +6,7 @@
   "compatibilityLevel": "JAVA_18",
   "mixins": [],
   "client": [
-    "ItemInHandRendererMixin"
+    "FirstPersonHandsAndItemsMixin",
   ],
   "server": [],
   "injectors": {
